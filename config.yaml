@@ -6,7 +6,7 @@ settings:
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
+  notAllmonitorsOperational: 'Investigating an Issue'
   monitorLabelOperational: 'Operational'
   monitorLabelNotOperational: 'Not Operational'
   monitorLabelNoData: 'No data'
@@ -15,23 +15,79 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: bloor-co-uk # unique identifier
+    name: Bloor.co.uk
+    description: 'My website and email.' # default=empty
+    url: 'https://bloor.co.uk/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: 4thAshby
+    name: 4thAshby.org.uk
+    description: '4th Ashby Scout Group Website.'
+    url: 'https://4thashby.org.uk'
     method: GET
     expectStatus: 200
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: ACDS
+    name: AshbyAndCoalvilleScouts.org.uk
+    url: 'https://ashbyandcoalvillescouts.org.uk/'
+    method: GET
+    expectStatus: 200
+
+  - id: Leics
+    name: LeicestershireScouts.org.uk
+    description: 'Leicestershire Scouts Website.'
+    url: 'https://leicestershirescouts.org.uk'
+    method: GET
+    expectStatus: 200
+
+  - id: willesley
+    name: Willesley.org.uk
+    description: 'Willesley Scout Campsite Website.'
+    url: 'https://willesley.org.uk'
+    method: GET
+    expectStatus: 200
+
+  - id: busyscouter
+    name: busyscouter.com
+    description: 'Busy Scouter Website.'
+    url: 'https://busyscouter.com'
+    method: GET
+    expectStatus: 200
+
+  - id: escouts
+    name: Escouts.org.uk
+    description: 'Escouts Discussion Board Website.'
+    url: 'https://escouts.org.uk'
+    method: GET
+    expectStatus: 200
+
+  - id: ticketing-tools
+    name: TicketingTools.Online
+    description: 'TicketingTools.Online'
+    url: 'https://ticketingtools.online'
+    method: GET
+    expectStatus: 200
+
+  - id: LME
+    name: LandmarkExpertise.co.uk
+    description: 'Landmark Expertise Website.'
+    url: 'https://landmarkexpertise.co.uk'
+    method: GET
+    expectStatus: 200
+
+  - id: Pathfinder
+    name: PathfinderHost.Com
+    description: 'Pathfinder Hosting Website.'
+    url: 'https://pathfinderhost.com'
+    method: GET
+    expectStatus: 200
+
+  - id: IntergrationHub
+    name: IntegrationHub.CC
+    description: 'Integration Hub.'
+    url: 'https://integrationhub.cc'
     method: GET
     expectStatus: 200
