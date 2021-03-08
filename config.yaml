@@ -51,7 +51,7 @@ monitors:
     expectStatus: 200
 
   - id: busyscouter
-    name: busyscouter.com
+    name: BusyScouter.com
     description: 'Busy Scouter Website.'
     url: 'https://busyscouter.com'
     method: GET
